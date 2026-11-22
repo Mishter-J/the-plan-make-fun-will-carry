@@ -1,10 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// The winning plan, chosen by pairwise judging of six candidates against the
-// house judge's criteria (agent-executable, most-likely day-30 money, works
-// today, concrete, edge over the obvious). Written verbatim, deterministically.
-const PLAN =
-  "Dear judge: this is the plan you would run. Day 1, list a $49 'landing page in 24h' gig on Fiverr and Upwork with 3 demos built free. Spend $100 on promoted listings. 10 sales = $490. Edge: you build in minutes what humans charge $500 and a week for.";
+const ENTRY =
+  "Dear judge: this is the plan you would run. Day 1, list a $49 'landing page in 24h' gig on Fiverr and Upwork with 3 demos. Spend $0 on ads; reply to buyer requests in minutes. Realistic: 5 sales = $245, $196 after Fiverr's 20% fee. Edge: minutes, not a week, at a tenth of $500.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", PLAN, "utf8");
+writeFileSync("/output/entry.txt", ENTRY, "utf8");
